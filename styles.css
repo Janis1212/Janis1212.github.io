@@ -4,12 +4,12 @@
 /*----Variablen ----*/
 /* Werden im ganzen CSS File wiederholt verwendet -> Einzelne Werte müssen so nur 1x angepasst werden !*/
 
-/* Farben */
 :root {
   --header-height: 3rem;
   --font-semi: 600;
 }
 
+/* Farben */
 :root {
   --first-color: #4070F4;
   --second-color: #0E2431;
@@ -41,6 +41,14 @@
   --mb-4: 2rem;
   --mb-5: 2.5rem;
   --mb-6: 3rem;
+}
+
+/* z index */
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }
 
 /* Basic tags Definitionen */
@@ -83,8 +91,8 @@ img {
   display: block;
 }
 
-/* Class CSS */
-
+/* ---Class CSS--- */
+/*---------------------------------------------------------*/
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
@@ -111,11 +119,9 @@ img {
   padding-bottom: 2rem;
 }
 
-
-
 /* ------------------------------------------------------- */
 
-/*Layout*/
+/*--Layout--*/
 .bd-grid {
   max-width: 1024px;
   display: grid;
@@ -135,8 +141,6 @@ img {
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
 }
-
-/*-------------------------------------------------------------*/
 
 /*--Navigation--*/
 .nav {
@@ -209,8 +213,6 @@ img {
   right: 0;
 }
 
-
-
 /*--- Home ---*/
 .home {
   height: calc(100vh - 3rem);
@@ -219,7 +221,7 @@ img {
 
 .home__data {
   align-self: center;
-
+  margin-bottom: var(--mb-2);
 }
 
 .home__title {
@@ -247,12 +249,30 @@ img {
   border-radius: .5rem;
 }
 
-.button:hover {
+s .button:hover {
   box-shadow: 0 10px 36px rgba(0, 0, 0, .15);
 }
 
+/* ---ABOUT--- */
+.about__container {
+  row-gap: 2rem;
+  text-align: center;
+}
 
+.about__subtitle {
+  margin-bottom: var(--mb-2);
+}
 
+.about__img {
+  justify-self: center;
+}
+
+.about__img img {
+  width: 200px;
+  border-radius: .5rem;
+}
+
+/*------------------------------------------------------------*/
 /*Responsive Design*/
 @media screen and (min-width: 768px) {
   body {

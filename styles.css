@@ -233,24 +233,6 @@ img {
   color: var(--first-color);
 }
 
-.home__img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 295px;
-}
-
-/* Home img auf Handy ausblenden */
-@media screen and (max-width: 768px) {
-  .home__img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 295px;
-    visibility: hidden;
-  }
-}
-
 .home__social {
   display: flex;
   flex-direction: row;
@@ -262,7 +244,7 @@ img {
   width: max-content;
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
-  color: var(--second-color);  
+  color: var(--second-color);
 }
 
 .button {
@@ -507,7 +489,5 @@ s .button:hover {
     margin-right: auto;
   }
 
-  .home__img {
-    right: 10%;
-  }
+
 }

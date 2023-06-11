@@ -318,25 +318,22 @@ s .button:hover {
   z-index: var(--z-back);
 }
 
+.skills__csharp {
+  width: 70%;
+}
+
+.skills__xbase {
+  width: 60%;
+}
+
 .skills__html {
-  width: 95%;
-}
-
-.skills__css {
-  width: 85%;
-}
-
-.skills__js {
-  width: 65%;
+  width: 40%;
 }
 
 .skills__ux {
   width: 75%;
 }
 
-.skills__img {
-  border-radius: .5rem;
-}
 
 /* ===== WORK =====*/
 .work__container {

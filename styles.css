@@ -43,14 +43,6 @@
   --mb-6: 3rem;
 }
 
-/* z index */
-:root {
-  --z-back: -10;
-  --z-normal: 1;
-  --z-tooltip: 10;
-  --z-fixed: 100;
-}
-
 /* Basic tags Definitionen */
 *,
 ::before,
@@ -404,6 +396,26 @@ s .button:hover {
   font-size: var(--normal-font-size);
   cursor: pointer;
   margin-left: auto;
+}
+
+/* --- Fuszeile ---*/
+.footer__container {
+  row-gap: 2rem;
+  margin-right: 2rem;
+  text-align: right;
+}
+
+.footer {
+  background-color: var(--second-color);
+  color: #fff;
+  text-align: center;
+  font-weight: var(--font-semi);
+  padding: 2rem 0;
+}
+
+.footer__title {
+  font-size: 2rem;
+  margin-bottom: var(--mb-4);
 }
 
 /*------------------------------------------------------------*/
